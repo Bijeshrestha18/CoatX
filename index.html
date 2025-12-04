@@ -331,30 +331,35 @@ Driven by this vision, she researched for few months and came up with the soluti
                     Partner with CoatX to ensure your fruits look their best, travel further, and last longer.
                 </p>
 
-                <!-- Mock Contact Form -->
-                <form class="space-y-6">
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name / Company</label>
-                        <input type="text" id="name" name="name" placeholder="E.g., Everest Exports" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-coatx-green focus:border-coatx-green transition duration-200" required>
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="contact@example.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-coatx-green focus:border-coatx-green transition duration-200" required>
-                    </div>
-                    <div>
-                        <label for="volume" class="block text-sm font-medium text-gray-700 mb-1">Estimated Monthly Volume (in Kg)</label>
-                        <input type="number" id="volume" name="volume" placeholder="50 Kg" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-coatx-green focus:border-coatx-green transition duration-200" min="1" required>
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Tell Us About Your Needs</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Which fruits do you need coating services for and what is your target market?" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-coatx-green focus:border-coatx-green transition duration-200" required></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-nepal-Green hover:bg-orange-600 text-White-800 font-bold py-3 rounded-lg text-lg transition duration-300 transform hover:scale-[1.01] shadow-lg shadow-nepal-orange/40">
-                        Submit Inquiry
-                    </button>
-                    <!-- Message Box Placeholder (Replaces alert()) -->
-                    <div id="statusMessage" class="hidden mt-4 p-3 bg-green-100 text-coatx-green rounded-lg font-medium"></div>
-                </form>
+                <!-- Embedded Google Form -->
+                <div class="w-full overflow-hidden rounded-lg shadow-lg">
+                    <iframe 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSc9Pw1PdN0rBZA62KB7pLYn5P21CP2v-_myPCTMzW-Trxtu5A/viewform?embedded=true" 
+                        width="100%" 
+                        height="820" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0"
+                        class="rounded-lg border-0"
+                        style="min-height: 700px;"
+                        title="CoatX Inquiry Form"
+                    >
+                        Loading…
+                    </iframe>
+                </div>
+                
+                <!-- Alternative contact info -->
+                <div class="mt-8 pt-6 border-t border-gray-200 text-center">
+                    <p class="text-gray-600">
+                        Having trouble with the form? Email us directly at: 
+                        <a href="mailto:info@coatx.com.np" class="text-coatx-green font-semibold hover:underline">
+                            info@coatx.com.np
+                        </a>
+                    </p>
+                    <p class="text-sm text-gray-500 mt-2">
+                        Or call us: +977 1 456 7890
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -407,43 +412,12 @@ Driven by this vision, she researched for few months and came up with the soluti
         </div>
     </footer>
 
-    <!-- JavaScript for form handling and year -->
+    <!-- JavaScript for year -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Set current year in footer
             document.getElementById('year').textContent = new Date().getFullYear();
-
-            const form = document.querySelector('form');
-            const statusMessage = document.getElementById('statusMessage');
-
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-
-                // Simple form validation and submission feedback
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-
-                if (name && email) {
-                    // Simulate successful submission
-                    statusMessage.textContent = `Thank you, ${name}! Your inquiry has been received. We will contact you at ${email} shortly.`;
-                    statusMessage.classList.remove('hidden', 'bg-red-100', 'text-red-800');
-                    statusMessage.classList.add('bg-green-100', 'text-coatx-green');
-                    form.reset();
-                    
-                    // Hide the message after 5 seconds
-                    setTimeout(() => {
-                        statusMessage.classList.add('hidden');
-                    }, 5000);
-
-                } else {
-                    // Show error message
-                    statusMessage.textContent = "Please fill in all required fields.";
-                    statusMessage.classList.remove('hidden', 'bg-green-100', 'text-coatx-green');
-                    statusMessage.classList.add('bg-red-100', 'text-red-800');
-                }
-            });
         });
     </script>
 </body>
 </html>
-
