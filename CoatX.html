@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoatX | Nepal's Premier Fruit Preservation & Waxing</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and friendly colors -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* Light gray background */
+        }
+        .text-coatx-green { color: #10B981; } /* Emerald 00 */
+        .bg-coatx-green { background-color: #10B981; }
+        .border-coatx-green { border-color: #10B981; }
+        .text-nepal-orange { color: #FF8800; } /* Custom orange for Nepal theme */
+        .shadow-fruit {
+            box-shadow: 0 0px 15px -3px rgba(16, 185, 129, 0.1), 0 4px 6px -2px rgba(16, 185, 129, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold flex items-center">
+                <a href="https://ibb.co/qLH3vG2w" class="coatx-logo">
+    <img src="https://i.ibb.co/cKWSj5sd/Gemini-Generated-Image-ewa6jjewa6jjewa6.png" 
+         alt="coatX Logo" 
+         style="max-height: 70px; height: auto; max-width: 100%;">
+</a>
+</a>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-coatx-green transition duration-300">About Us</a>
+                <a href="#services" class="text-gray-600 hover:text-coatx-green transition duration-300">Services</a>
+                <a href="#benefits" class="text-gray-600 hover:text-coatx-green transition duration-300">Benefits</a>
+                <a href="#founders" class="text-gray-600 hover:text-coatx-green transition duration-300">Founders Story</a>
+                <a href="#contact" class="text-gray-600 hover:text-coatx-green transition duration-300">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden md:block bg-coatx-green hover:bg-emerald-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 shadow-lg">
+                Get a Quote
+            </a>
+            <!-- Mobile Menu Button (Hamburger Icon - SVG) -->
+            <button class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900 text-white py-20 md:py-32 overflow-hidden">
+        <!-- Background element (Stylized Nepalese mountain/agricultural abstract) -->
+        <div class="absolute inset-0 opacity-10 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1498579397066-22750a3cb424?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlc2glMjBmcnVpdHN8ZW58MHx8MHx8fDA%3D');"></div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                Preserve the Pride of <span class="text-nepal-orange">Nepal's Harvest</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-8 max-w-3xl mx-auto">
+                CoatX is here to help farmers and families enjoy fruits that stay fresh, last longer, and carry their natural goodness from orchard to home.
+            </p>
+            <a href="#services" class="inline-block bg-coatx-green hover:bg-emerald-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-xl shadow-coatx-green/30">
+                Discover Our Preservation Technology
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us / Nepal Focus Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div>
+                    <span class="inline-block text-sm font-semibold uppercase tracking-wider text-nepal-orange mb-2">CoatX: Made in Nepal</span>
+                    <h2 class="text-4xl font-bold mb-6">
+                        Bridging Farms to Local Markets
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Nepal's climate yields exceptional, high-quality fruits, but challenges in transportation and storage often limit their market reach. At CoatX, we use food-grade, plant-based coatings to lock in natural freshness, flavor, and nutrients.
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">
+                            <!-- Icon for Quality -->
+                            <svg class="w-6 h-6 mr-3 text-coatx-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.007 12.007 0 002.944 12c.005 3.163 1.157 6.024 3.04 8.618A11.955 11.955 0 0112 21.056c3.163-.005 6.024-1.157 8.618-3.04A12.007 12.007 0 0021.056 12c-.005-3.163-1.157-6.024-3.04-8.618z"></path></svg>
+                            Extended Shelf Life: Up to 2x longer preservation.
+                        </li>
+                        <li class="flex items-center">
+                            <!-- Icon for Safety -->
+                            <svg class="w-6 h-6 mr-3 text-coatx-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                            Natural & Safe: FDA and EU-compliant, non-toxic coating.
+                        </li>
+                    </ul>
+                </div>
+                <!-- Image Placeholder (Stylized Fruit) -->
+                <div class="relative h-96 rounded-2xl overflow-hidden shadow-2xl bg-gray-200">
+                    <img src="https://fruitgrowers.com/wp-content/uploads/2019/02/fruit-wax-1.jpeg" 
+     alt="Coated Nepalese Apples" 
+     class="w-full h-full object-cover rounded-[15px] shadow-[8px_8px_10px_gray]">
+<div class="absolute inset-0 bg-black opacity-20"></div>                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block text-sm font-semibold uppercase tracking-wider text-coatx-green mb-2">Our Process</span>
+            <h2 class="text-4xl font-bold mb-12">
+                Premium Coating Services Tailored for Nepalese Producers
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service Card 1: Cleaning & Washing -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-coatx-green transform hover:scale-105 transition duration-500">
+                    <div class="text-5xl mb-4 text-coatx-green">
+                        <!-- SVG Icon for Cleaning -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">1. Initial Preparation</h3>
+                    <p class="text-gray-600">
+                        Fruits are carefully pre-sorted, brushed, and thoroughly washed in purified water to remove contaminants before coating.
+                    </p>
+                </div>
+                
+                <!-- Service Card 2: Precision Coating -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-coatx-green transform hover:scale-105 transition duration-500">
+                    <div class="text-5xl mb-4 text-coatx-green">
+                        <!-- SVG Icon for Coating -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v2.5m0-2.5h2.5M7 14h2.5m2.5-2.5v2.5m0-2.5v2.5m0-2.5h2.5m-2.5 2.5h2.5M15 11.5V14m0-2.5v2.5m0-2.5h2.5M15 14h2.5M4 20h16a2 2 0 002-2V6a2 2 0 00-2-2H4a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">2. Nano-Layer Coating</h3>
+                    <p class="text-gray-600">
+                        A thin, edible layer of plant-based coating is applied using advanced spray technology for a uniform, protective seal.
+                    </p>
+                </div>
+
+                <!-- Service Card 3: Curing & Packaging -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-coatx-green transform hover:scale-105 transition duration-500">
+                    <div class="text-5xl mb-4 text-coatx-green">
+                        <!-- SVG Icon for Packaging -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2v-8a2 2 0 00-2-2H5zm0 0V6a2 2 0 012-2h10a2 2 0 012 2v2"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">3. Final Finish & Export Prep</h3>
+                    <p class="text-gray-600">
+                        Coated fruits are quickly dried and buffed to a desirable shine, then packed for immediate domestic or international shipping.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits & Stats -->
+    <section id="benefits" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block text-sm font-semibold uppercase tracking-wider text-nepal-orange mb-2">Why CoatX?</span>
+                <h2 class="text-4xl font-bold">
+                    Measurable Results for Your Business
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <!-- Stat 1: Shelf Life -->
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md border-b-4 border-coatx-green">
+                    <p class="text-5xl font-extrabold text-coatx-green mb-1">2X+</p>
+                    <p class="text-lg font-medium text-gray-700">Extended Shelf Life</p>
+                </div>
+                <!-- Stat 2: Spoilage Reduction -->
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md border-b-4 border-coatx-green">
+                    <p class="text-5xl font-extrabold text-coatx-green mb-1">15%</p>
+                    <p class="text-lg font-medium text-gray-700">Reduction in Spoilage</p>
+                </div>
+                <!-- Stat 3: Export Appeal -->
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md border-b-4 border-coatx-green">
+                    <p class="text-5xl font-extrabold text-coatx-green mb-1">100%</p>
+                    <p class="text-lg font-medium text-gray-700">Enhanced Market Appeal</p>
+                </div>
+                <!-- Stat 4: Water Loss -->
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md border-b-4 border-coatx-green">
+                    <p class="text-5xl font-extrabold text-coatx-green mb-1">Minimal</p>
+                    <p class="text-lg font-medium text-gray-700">Moisture & Water Loss</p>
+                </div>
+            </div>
+
+            <!-- Focus on Fruits Served -->
+            <div class="mt-16 text-center">
+                <h3 class="text-3xl font-bold mb-6">Fruits We Service</h3>
+                <div class="flex flex-wrap justify-center gap-4 text-xl font-medium text-gray-700">
+                    <span class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full shadow-sm">Apple / Jumla Apple </span>
+                    <span class="px-4 py-2 bg-red-100 text-red-800 rounded-full shadow-sm">Pomegranate</span>
+                    <span class="px-4 py-2 bg-orange-100 text-orange-800 rounded-full shadow-sm">Orange</span>
+                    <span class="px-4 py-2 bg-lime-100 text-lime-800 rounded-full shadow-sm">Lemon & Lime</span>
+                    <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full shadow-sm">Kiwi </span>
+                    <span class="px-4 py-2 bg-amber-100 text-amber-800 rounded-full shadow-sm">Mango</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founders Story Section -->
+    <section id="founders" class="py-16 md:py-24 bg-gradient-to-r from-emerald-50 to-orange-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block text-sm font-semibold uppercase tracking-wider text-nepal-orange mb-2">Our Journey</span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    The Founders Story
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From humble beginnings to revolutionizing Nepal's fruit preservation industry
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Founders Photo -->
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-coatx-green to-nepal-orange p-1 rounded-2xl shadow-2xl">
+                        <img src="https://i.ibb.co/vC6mGXmN/abc.jpg" alt="abc" border="2" 
+     width="650" 
+     height="auto" 
+     style="filter: drop-shadow(8px 8px 10px gray); border-radius: 25px;" />
+
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-white p-4 rounded-xl shadow-lg border border-gray-200">
+                        <p class="font-bold text-coatx-green">Kanchan</p>
+                        <p class="text-sm text-gray-600">Co-Founders & CEO, CoatX Nepal</p>
+                    </div>
+                </div>
+
+                <!-- Story Content -->
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-bold text-gray-800">
+                        Growing Up Among Nepal's Orchards
+                    </h2>
+                    
+                    <p class="text-lg text-gray-600">
+                        Growing up in the lush hills of Nepal, Kanchan always believed that fruit should be pure and untouched, straight from the farm to the table. So when she first noticed a shiny waxy layer on imported apples and oranges, she felt uneasy. Like many Nepalese consumers, she assumed it was artificial, unsafe, and something that didn’t belong on real organic fruit.
+                    </p>
+                    
+                    <p class="text-lg text-gray-600">
+                        But one question kept circling in her mind:
+“If waxing is harmful, why is it being sold everywhere?”
+
+Her curiosity led her to dig deeper. Through her studies in agricultural science and days of reading during library shifts, she uncovered something surprising:
+
+Many waxes are naturally plant-based and they protect fruits from losing moisture further extending shelf life without affecting quality.
+                    </p>
+
+                    <div class="bg-coatx-green/10 p-6 rounded-xl border-l-4 border-coatx-green">
+                        <h3 class="text-xl font-bold text-coatx-green mb-3">The "Aha!" Moment</h3>
+                        <p class="text-gray-700">
+                            In 2019, while comparing a waxed and unwaxed apple side-by-side, she noticed the unwaxed one shrivel quickly while the waxed one stayed fresh.
+That simple observation changed everything.
+
+At the same time, she saw local farmers losing up to 40% of their harvest to spoilage, while Nepal continued importing fruits from India and China.
+
+She realized a natural preservation solution could support local farmers, extend shelf life, and reduce the country’s dependence on imports.
+
+Driven by this vision, she researched for few months and came up with the solution. The result was CoatX: a gentle, plant-derived fruit protection solution that reduces waste, boosts farmers’ income, and brings fresher Nepalese fruits to the market.
+                        </p>
+                    </div>
+
+                    <p class="text-lg text-gray-600">
+                        Today, CoatX serves hundreds of farmers across Nepal, helping them get better prices for their produce and reducing food waste significantly. Our dream is to see Nepalese fruits on tables around the world, fresh and delicious as if just picked from our orchards.
+                    </p>
+
+                    <div class="pt-6 border-t border-gray-200">
+                        <blockquote class="text-2xl italic text-gray-700 font-light">
+                            "If we can save a single fruit, we can save a farmer’s hope."
+                            <footer class="text-lg font-medium text-nepal-orange mt-2 not-italic">— Kanchan </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Milestones Timeline -->
+            <div class="mt-20 pt-10 border-t border-gray-200">
+                <h3 class="text-3xl font-bold text-center mb-12">Our Journey Timeline</h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                        <div class="text-4xl font-bold text-coatx-green mb-2">2018</div>
+                        <p class="font-semibold">Idea Born</p>
+                        <p class="text-sm text-gray-600 mt-2">Seeing farmers' struggles inspired the CoatX concept</p>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                        <div class="text-4xl font-bold text-coatx-green mb-2">2020</div>
+                        <p class="font-semibold">First Prototype</p>
+                        <p class="text-sm text-gray-600 mt-2">Successful lab tests with local apples</p>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                        <div class="text-4xl font-bold text-coatx-green mb-2">2022</div>
+                        <p class="font-semibold">Commercial Launch</p>
+                        <p class="text-sm text-gray-600 mt-2">Served first 50 farmers in Kathmandu Valley</p>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                        <div class="text-4xl font-bold text-coatx-green mb-2">2024</div>
+                        <p class="font-semibold">National Reach</p>
+                        <p class="text-sm text-gray-600 mt-2">Expanding to major fruit-growing regions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Contact Form Section -->
+    <section id="contact" class="py-16 md:py-24 bg-coatx-green">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">
+                    Ready to Boost Your Produce Value?
+                </h2>
+                <p class="text-lg text-gray-600 mb-8 text-center">
+                    Partner with CoatX to ensure your fruits look their best, travel further, and last longer.
+                </p>
+
+                <!-- Mock Contact Form -->
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name / Company</label>
+                        <input type="text" id="name" name="name" placeholder="E.g., Everest Exports" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-coatx-green focus:border-coatx-green transition duration-200" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="contact@example.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-coatx-green focus:border-coatx-green transition duration-200" required>
+                    </div>
+                    <div>
+                        <label for="volume" class="block text-sm font-medium text-gray-700 mb-1">Estimated Monthly Volume (in Kg)</label>
+                        <input type="number" id="volume" name="volume" placeholder="50 Kg" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-coatx-green focus:border-coatx-green transition duration-200" min="1" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Tell Us About Your Needs</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Which fruits do you need coating services for and what is your target market?" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-coatx-green focus:border-coatx-green transition duration-200" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-nepal-Green hover:bg-orange-600 text-White-800 font-bold py-3 rounded-lg text-lg transition duration-300 transform hover:scale-[1.01] shadow-lg shadow-nepal-orange/40">
+                        Submit Inquiry
+                    </button>
+                    <!-- Message Box Placeholder (Replaces alert()) -->
+                    <div id="statusMessage" class="hidden mt-4 p-3 bg-green-100 text-coatx-green rounded-lg font-medium"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Logo & Mission -->
+            <div class="col-span-2 md:col-span-1">
+                <h4 class="text-3xl font-bold mb-3">
+                    <span class="text-coatx-green">Coat</span><span class="text-nepal-orange">X</span>
+                </h4>
+                <p class="text-sm text-gray-400">
+                    Dedicated to premium fruit preservation technology in Nepal.
+                </p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h5 class="text-lg font-semibold mb-4 text-coatx-green">Quick Links</h5>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#about" class="hover:text-white transition duration-200">Our Story</a></li>
+                    <li><a href="#services" class="hover:text-white transition duration-200">Coating Process</a></li>
+                    <li><a href="#benefits" class="hover:text-white transition duration-200">Our Advantages</a></li>
+                    <li><a href="#founders" class="hover:text-white transition duration-200">Founders Story</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h5 class="text-lg font-semibold mb-4 text-coatx-green">Contact Info</h5>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li>Kathmandu, Nepal</li>
+                    <li>Email: info@coatx.com.np</li>
+                    <li>Phone: +977 1 456 7890 (Mock)</li>
+                </ul>
+            </div>
+
+            <!-- Social/Legal -->
+            <div>
+                <h5 class="text-lg font-semibold mb-4 text-coatx-green">Legal</h5>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white transition duration-200">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition duration-200">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-gray-700 text-center text-sm text-gray-500">
+            &copy; <span id="year">2024</span> CoatX. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript for form handling and year -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set current year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            const form = document.querySelector('form');
+            const statusMessage = document.getElementById('statusMessage');
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                // Simple form validation and submission feedback
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+
+                if (name && email) {
+                    // Simulate successful submission
+                    statusMessage.textContent = `Thank you, ${name}! Your inquiry has been received. We will contact you at ${email} shortly.`;
+                    statusMessage.classList.remove('hidden', 'bg-red-100', 'text-red-800');
+                    statusMessage.classList.add('bg-green-100', 'text-coatx-green');
+                    form.reset();
+                    
+                    // Hide the message after 5 seconds
+                    setTimeout(() => {
+                        statusMessage.classList.add('hidden');
+                    }, 5000);
+
+                } else {
+                    // Show error message
+                    statusMessage.textContent = "Please fill in all required fields.";
+                    statusMessage.classList.remove('hidden', 'bg-green-100', 'text-coatx-green');
+                    statusMessage.classList.add('bg-red-100', 'text-red-800');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
