@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Tour | CoatX Nepal</title>
+    <link rel="icon" href="https://i.ibb.co/cKWSj5sd/Gemini-Generated-Image-ewa6jjewa6jjewa6.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+            overflow-x: hidden;
+        }
+        .text-coatx-green { color: #10B981; }
+        .bg-coatx-green { background-color: #10B981; }
+        .border-coatx-green { border-color: #10B981; }
+        .text-nepal-orange { color: #FF8800; }
+        
+        /* Video Player Styles */
+        video {
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        /* Active nav link */
+        .nav-active {
+            color: #10B981;
+            font-weight: 600;
+        }
+        
+        /* Factory Process Cards */
+        .process-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid #10B981;
+        }
+        
+        .process-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- UNIFORM HEADER (SAME AS HOME) -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold flex items-center">
+                <img src="https://i.ibb.co/cKWSj5sd/Gemini-Generated-Image-ewa6jjewa6jjewa6.png" 
+                     alt="coatX Logo" 
+                     style="max-height: 70px; height: auto; max-width: 100%;">
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#about" class="text-gray-600 hover:text-coatx-green transition duration-300">About Us</a>
+                <a href="index.html#services" class="text-gray-600 hover:text-coatx-green transition duration-300">Services</a>
+                <a href="index.html#benefits" class="text-gray-600 hover:text-coatx-green transition duration-300">Benefits</a>
+                <a href="index.html#founders" class="text-gray-600 hover:text-coatx-green transition duration-300">Founders Story</a>
+                <a href="factory.html" class="nav-active text-coatx-green hover:text-emerald-700 transition duration-300">Factory Tour</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-coatx-green transition duration-300">Contact</a>
+            </nav>
+            <a href="index.html#contact" class="hidden md:block bg-coatx-green hover:bg-emerald-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 shadow-lg">
+                Get a Quote
+            </a>
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg px-4 py-6">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html#about" class="text-gray-600 hover:text-coatx-green transition duration-300 py-2">About Us</a>
+                <a href="index.html#services" class="text-gray-600 hover:text-coatx-green transition duration-300 py-2">Services</a>
+                <a href="index.html#benefits" class="text-gray-600 hover:text-coatx-green transition duration-300 py-2">Benefits</a>
+                <a href="index.html#founders" class="text-gray-600 hover:text-coatx-green transition duration-300 py-2">Founders Story</a>
+                <a href="factory.html" class="text-coatx-green font-semibold py-2">Factory Tour</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-coatx-green transition duration-300 py-2">Contact</a>
+                <a href="index.html#contact" class="bg-coatx-green hover:bg-emerald-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 text-center">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Factory Tour Hero -->
+    <section class="relative bg-gradient-to-r from-coatx-green to-nepal-orange text-coatx-green py-16 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                 CoatX Factory Tour
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-8 max-w-3xl mx-auto">
+                Experience our state-of-the-art fruit preservation process in action
+            </p>
+            <a href="#video-section" class="inline-block bg-white text-coatx-Orange font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-xl">
+                Watch the Tour
+            </a>
+        </div>
+    </section>
+
+    <!-- Factory Video Section -->
+    <section id="video-section" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-coatx-Orange mb-4">
+                        Our Manufacturing Process
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        See how we transform fresh Nepalese fruits into longer-lasting, market-ready products using advanced preservation technology
+                    </p>
+                </div>
+                
+                <!-- Video Player -->
+                <div class="mb-12">
+                    <video controls autoplay muted playsinline class="mx-auto">
+                        <source src="images/factory.mp4" type="video/mp4">
+                        <source src="images/factory.mov" type="video/quicktime">
+                        <source src="images/factory.avi" type="video/x-msvideo">
+                        <p class="text-center text-gray-500 mt-4">
+                            Your browser doesn't support HTML5 video. Please ensure your video file is named "factory.mp4" and placed in the "images" folder.
+                        </p>
+                    </video>
+                    
+                    <div class="mt-4 text-center text-gray-500 text-sm">
+                        <p>Video loading from: <code class="bg-gray-100 px-2 py-1 rounded">images/factory.mp4</code></p>
+                    </div>
+                </div>
+                
+                <!-- Video Controls Note -->
+                <div class="bg-blue-50 p-6 rounded-xl border border-blue-200 mb-12">
+                    <div class="flex items-center">
+                        <svg class="w-8 h-8 text-blue-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-blue-700">Video Controls</h3>
+                            <p class="text-blue-600">Use the player controls to play, pause, adjust volume, or view in fullscreen mode</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Factory Process Steps -->
+    <section class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block text-sm font-semibold uppercase tracking-wider text-coatx-green mb-2">Our 4-Step Process</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    How We Preserve Your Fruits
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Step 1 -->
+                <div class="process-card">
+                    <div class="text-3xl mb-4 text-coatx-green">1</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Quality Sorting</h3>
+                    <p class="text-gray-600">Fruits are carefully sorted by size, ripeness, and quality to ensure only the best produce enters our production line.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="process-card">
+                    <div class="text-3xl mb-4 text-coatx-green">2</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Sanitization</h3>
+                    <p class="text-gray-600">Thorough washing with purified water and food-safe sanitizers to remove any impurities or contaminants.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="process-card">
+                    <div class="text-3xl mb-4 text-coatx-green">3</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Coating Application</h3>
+                    <p class="text-gray-600">Precise application of our plant-based coating using advanced spray technology for uniform coverage.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="process-card">
+                    <div class="text-3xl mb-4 text-coatx-green">4</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Quality Control</h3>
+                    <p class="text-gray-600">Rigorous quality checks and packaging under hygienic conditions ready for market distribution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Factory Stats -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    Our Production Capacity
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Serving Nepalese farmers with modern, scalable preservation solutions
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-5xl font-bold text-coatx-green mb-2">10+</div>
+                    <p class="text-lg font-medium text-gray-700">Fruit Varieties</p>
+                    <p class="text-sm text-gray-500">Processed daily</p>
+                </div>
+                
+                <div class="p-6">
+                    <div class="text-5xl font-bold text-coatx-green mb-2">5 Ton</div>
+                    <p class="text-lg font-medium text-gray-700">Daily Capacity</p>
+                    <p class="text-sm text-gray-500">Preservation capacity</p>
+                </div>
+                
+                <div class="p-6">
+                    <div class="text-5xl font-bold text-coatx-green mb-2">24/7</div>
+                    <p class="text-lg font-medium text-gray-700">Operation</p>
+                    <p class="text-sm text-gray-500">Harvest season support</p>
+                </div>
+                
+                <div class="p-6">
+                    <div class="text-5xl font-bold text-coatx-green mb-2">100%</div>
+                    <p class="text-lg font-medium text-gray-700">Quality Checked</p>
+                    <p class="text-sm text-gray-500">Every batch inspected</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA to Contact -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-coatx-green to-emerald-600">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-orange-400 mb-6">
+                Want to Visit Our Factory in Person?
+            </h2>
+            <p class="text-xl text-coatx-green-400/90 mb-8 max-w-2xl mx-auto">
+                Schedule a personal tour of our facility and see our preservation technology up close
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="index.html#contact" class="inline-block bg-white text-coatx-green font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-xl">
+                    Schedule a Visit
+                </a>
+                <a href="index.html" class="inline-block bg-transparent border-2 border-white text-coatx-black font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 hover:bg-coatx-green/10">
+                    ← Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIFORM FOOTER (SAME AS HOME) -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Logo & Mission -->
+            <div class="col-span-2 md:col-span-1">
+                <h4 class="text-3xl font-bold mb-3">
+                    <span class="text-coatx-green">Coat</span><span class="text-nepal-orange">X</span>
+                </h4>
+                <p class="text-sm text-gray-400">
+                    Dedicated to premium fruit preservation technology in Nepal.
+                </p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h5 class="text-lg font-semibold mb-4 text-coatx-green">Quick Links</h5>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="index.html#about" class="hover:text-white transition duration-200">Our Story</a></li>
+                    <li><a href="index.html#services" class="hover:text-white transition duration-200">Coating Process</a></li>
+                    <li><a href="index.html#benefits" class="hover:text-white transition duration-200">Our Advantages</a></li>
+                    <li><a href="index.html#founders" class="hover:text-white transition duration-200">Founders Story</a></li>
+                    <li><a href="factory.html" class="hover:text-white transition duration-200">Factory Tour</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h5 class="text-lg font-semibold mb-4 text-coatx-green">Contact Info</h5>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li>Kathmandu, Nepal</li>
+                    <li>Email: info@coatx.com.np</li>
+                    <li>Phone: +977 1 456 7890</li>
+                </ul>
+            </div>
+
+            <!-- Social/Legal -->
+            <div>
+                <h5 class="text-lg font-semibold mb-4 text-coatx-green">Legal</h5>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white transition duration-200">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition duration-200">Terms of Service</a></li>
+                    <li><a href="factory.html" class="text-nepal-orange hover:text-orange-400 transition duration-200">🏭 Factory Tour</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-gray-700 text-center text-sm text-gray-500">
+            &copy; <span id="year">2024</span> CoatX. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Video auto-play attempt
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('video');
+            if (video) {
+                video.play().catch(error => {
+                    console.log('Auto-play prevented, user interaction required');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
